@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kentucky Fried Weed</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+
+.home-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9); /* Initial background color with transparency */
+  z-index: 1000;
+  transition: background-color 0.3s ease; /* Transition effect for changing transparency */
+  color: green;
+}
+
+.home-header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.home-header ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.home-header ul li a {
+  color: green;
+}
+
+/* Product Cards */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 5px; /* Adjust the margin here to bring the cards closer */
+  width: 300px;
+  background-color: #fff; /* Change background color as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adding a box shadow for depth */
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.product-card h2 {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #333; /* Change font color as needed */
+}
+
+.product-card p {
+  color: #666; /* Change font color as needed */
+  margin-bottom: 15px;
+}
+
+.product-card button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+  background-color: #555;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+  padding: 20px;
+  background-color: #f9f9f9; /* Change background color as needed */
+}
+
+.why-choose-us h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.reasons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.reason-card {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 250px;
+  background-color: #fff; /* Change background color as needed */
+  margin: 10px;
+}
+
+.reason-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333; /* Change font color as needed */
+}
+
+.reason-card p {
+  color: #666; /* Change font color as needed */
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 20px;
+  background-color: #fff; /* Set FAQ section background to white */
+}
+
+.faq-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Accordion Styles */
+.accordion-toggle {
+  display: none;
+}
+
+.accordion-btn {
+  display: block;
+  background-color: #e0e0e0; /* Change the background color for questions */
+  padding: 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.accordion-content {
+  display: none;
+  padding: 10px;
+  background-color: #fff; /* Set answer background to white */
+}
+
+.accordion-toggle:checked + .accordion-btn + .accordion-content {
+  display: block;
+}
+
+
+  </style>
+</head>
+<body>
+
+  <main>
+    <section id="home">
+      <header class="home-header">
+        <div class="logo">
+          <p>KFW</p>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="content">
+        <h2 style="color:green">Lorem Ipsum</h2>
+        <button class="purchase-button">Purchase Now</button>
+      </div>
+    </section>
+
+    <h2 style="padding-top:15px;">Featured products</h2>
+
+    <section class="products">
+      <div class="product-card">
+        <img src="image1.jpg" alt="Product 1">
+        <h2>Product 1</h2>
+        <p>Description of Product 1</p>
+        <p>$10.99</p>
+        <a href="product1.html" class="product-link">Go to Product Page</a>
+      </div>
+      
+      <div class="product-card">
+        <img src="image2.jpg" alt="Product 2">
+        <h2>Product 2</h2>
+        <p>Description of Product 2</p>
+        <p>$8.99</p>
+        <a href="product2.html" class="product-link">Go to Product Page</a>
+      </div>
+
+      <div class="product-card">
+        <img src="image2.jpg" alt="Product 2">
+        <h2>Product 2</h2>
+        <p>Description of Product 2</p>
+        <p>$8.99</p>
+        <a href="product1.html" class="product-link">Go to Product Page</a>
+      </div>
+
+      <div class="product-card">
+        <img src="image2.jpg" alt="Product 2">
+        <h2>Product 2</h2>
+        <p>Description of Product 2</p>
+        <p>$8.99</p>
+        <a href="product2.html" class="product-link">Go to Product Page</a>
+      </div>
+      <!-- Add more product cards as needed -->
+    </section>
+
+    <section class="why-choose-us">
+      <h2>Why Choose Us?</h2>
+      <div class="reasons">
+        <div class="reason-card">
+          <h3>Quality Ingredients</h3>
+          <p>We source only the freshest and finest ingredients for our dishes.</p>
+        </div>
+        <div class="reason-card">
+          <h3>Unique Flavors</h3>
+          <p>Experience a fusion of flavors that sets us apart from the rest.</p>
+        </div>
+        <div class="reason-card">
+          <h3>Exceptional Service</h3>
+          <p>Our team is dedicated to providing top-notch service to all our customers.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="faq-section">
+      <h2 style="padding-bottom: 30px;">Frequently Asked Questions</h2>
+      <div class="accordion-container">
+        <div class="accordion">
+          <input type="checkbox" id="faq-1" class="accordion-toggle">
+          <label for="faq-1" class="accordion-btn">Question 1: How do I place an order?</label>
+          <div class="accordion-content">
+            <p>To place an order, simply visit our website and select the desired items from the menu. You can also call our customer service to assist you with your order.</p>
+          </div>
+          
+          <input type="checkbox" id="faq-2" class="accordion-toggle">
+          <label for="faq-2" class="accordion-btn">Question 2: What is your return policy?</label>
+          <div class="accordion-content">
+            <p>We have a 30-day return policy for unused and unopened items. Please refer to our Returns & Refunds page for more details.</p>
+          </div>
+          
+          <!-- Add more questions and answers -->
+          
+          <input type="checkbox" id="faq-3" class="accordion-toggle">
+          <label for="faq-3" class="accordion-btn">Question 3: Do you offer catering services?</label>
+          <div class="accordion-content">
+            <p>Yes, we provide catering services for events and gatherings. Contact us for more information and bookings.</p>
+          </div>
+          
+          <input type="checkbox" id="faq-4" class="accordion-toggle">
+          <label for="faq-4" class="accordion-btn">Question 4: Are gift cards available?</label>
+          <div class="accordion-content">
+            <p>Yes, we offer gift cards that can be purchased online or at our physical locations.</p>
+          </div>
+          
+          <input type="checkbox" id="faq-5" class="accordion-toggle">
+          <label for="faq-5" class="accordion-btn">Question 5: How can I contact customer support?</label>
+          <div class="accordion-content">
+            <p>You can reach our customer support team via phone, email, or through the contact form on our website.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  <footer>
+    <p>&copy; 2023 Kentucky Fried Weed. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
