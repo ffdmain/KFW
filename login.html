@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Kentucky Fried Weed</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="validation.js"></script>
+  <style>
+    .home-header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.home-header ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.home-header ul li a {
+  color: green;
+}
+  </style>
+</head>
+<body>
+  <header class="home-header">
+    <div class="logo">
+      <p>KFW</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="locations.html">Locations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="login-form">
+      <h2>Log in to your account</h2>
+      <form onsubmit="return validateLoginForm()" action="login.php" method="post">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Username" required><br><br>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Password" required><br><br>
+
+        <input type="submit" value="Login">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Kentucky Fried Weed. All rights reserved.</p>
+  </footer>
+</body>
+</html>
